@@ -7,6 +7,7 @@ export default function TableData(){
 
     useEffect(() => {
 
+        // axios.get("https://sports-world-backend-srb6.vercel.app/players")
         axios.get("http://localhost:3000/players")
         .then(cricket => setPlayers(cricket.data) )
         .catch(err => console.log(err))
