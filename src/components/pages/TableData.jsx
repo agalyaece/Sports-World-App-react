@@ -3,12 +3,12 @@ import { useEffect, useState } from "react";
 
 export default function TableData(){
 
-    const [players, setPlayer] = useState([]);
+    const [players, setPlayers] = useState([]);
 
     useEffect(() => {
 
         axios.get("http://localhost:3000/players")
-        .then(cricket => setPlayer(cricket.data) )
+        .then(cricket => setPlayers(cricket.data) )
         .catch(err => console.log(err))
     }, [])
 

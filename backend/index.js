@@ -11,7 +11,8 @@ app.use(express.json());
 
 const port = 3000;
 
-mongoose.connect("mongodb://127.0.0.1:27017/sports")
+mongoose.connect("mongodb+srv://agalyapytest:kaMtezCysko6xUKS@cluster0.ngiwond.mongodb.net/sports?retryWrites=true&w=majority&appName=Cluster0"
+)
 
 app.get("/players", (req,res) => {
     playerModels.find({})
