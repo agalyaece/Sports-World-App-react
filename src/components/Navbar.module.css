@@ -63,6 +63,7 @@ nav .menu span {
 @media (max-width: 480px) {
     nav .menu {
         display: flex;
+        position: sticky;
     }
 
     nav {

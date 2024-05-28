@@ -19,14 +19,8 @@ export default function Navbar() {
 
             <ul className={menuOpen ? `${classes.open}` : undefined}>
                 <li>
-                    <NavLink  to="/football">Football</NavLink>
-                </li>
-                <li>
-                    <NavLink  to="/cricket">Cricket</NavLink>
-                </li>
-                <li>
-                    <NavLink to="tennis">Tennis</NavLink>
-                </li>
+                   <NavLink  to="/players">Players</NavLink> 
+                </li>     
             </ul>
         </nav>
     );
